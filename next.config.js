@@ -1,15 +1,8 @@
 module.exports = {
-  async headers() {
-    return [
-      {
-        source: '/api/[endpoint]',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=30',
-          },
-        ],
-      },
-    ];
-  },
+  functions: {
+    /**
+     * Allow 1m timeout (requires Pro plan) for API endpoints.
+     */
+    maxDuration: 60
+  }
 }
