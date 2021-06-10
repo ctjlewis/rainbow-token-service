@@ -1,0 +1,23 @@
+{
+  "name": "rainbow-token-service",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "yarn build && next start"
+  },
+  "dependencies": {
+    "next": "10.2.3",
+    "rainbow-token-list": "^1.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.11",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4",
+    "typescript": "4.3.2"
+  }
+}
