@@ -5,10 +5,10 @@ export default async (req: NextApiRequest, res: NextApiResponse<any[]>) => {
   /**
    * Mark stale once an hour.
    */
-  // res.setHeader(
-  //   'Cache-Control',
-  //   `public, max-age=${60}`
-  // );
+  res.setHeader(
+    'Cache-Control',
+    `public, max-age=${60}`
+  );
 
   console.log(Date.now(), res.headersSent, res.getHeaders());
 
