@@ -215,7 +215,7 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
   integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
 
-"@uniswap/token-lists@github:rainbow-me/token-lists#40babff279b578e5585d274e1c7c93f35c56ed73":
+"@uniswap/token-lists@rainbow-me/token-lists#40babff279b578e5585d274e1c7c93f35c56ed73":
   version "1.0.0-beta.18-extensions"
   resolved "https://codeload.github.com/rainbow-me/token-lists/tar.gz/40babff279b578e5585d274e1c7c93f35c56ed73"
 
@@ -699,6 +699,11 @@ commander@^6.0.0:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
+
+commander@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
+  integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -2403,6 +2408,26 @@ quick-lru@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
+
+rainbow-token-list-test@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/rainbow-token-list-test/-/rainbow-token-list-test-1.2.2.tgz#7c3f8affbf4a773dce7a94a9ed7d868c16bddaa5"
+  integrity sha512-fRrYWUbAWyd+TAgzht2tFh2NR2/3Bc0ulfmrO+p4bFcV5YolUXa16lj9XRVGaaNCEG8ak6sV/H2UBsys2c/BkQ==
+  dependencies:
+    "@ethersproject/address" "^5.0.5"
+    "@uniswap/token-lists" rainbow-me/token-lists#40babff279b578e5585d274e1c7c93f35c56ed73
+    commander "^7.2.0"
+    degit "^2.8.0"
+    get-svg-colors "^1.5.1"
+    lodash "^4.17.20"
+    lodash-es "^4.17.15"
+    make-color-more-chill "^0.2.0"
+    mkdirp "^1.0.4"
+    node-fetch "^2.6.1"
+    path "^0.12.7"
+    request "^2.88.2"
+    simple-git "^2.21.0"
+    zod "^2.0.0-beta.16"
 
 rainbow-token-list@^1.2.2:
   version "1.2.2"

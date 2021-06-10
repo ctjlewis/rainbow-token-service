@@ -1,8 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { Token } from 'rainbow-token-list/dist/constants';
+import { build } from 'rainbow-token-list-test'
 
-export default async (req: NextApiRequest, res: NextApiResponse<any[]>) => {
+export default async (req: NextApiRequest, res: NextApiResponse<Token[]>) => {
   /**
    * Mark stale once an hour.
    */
@@ -11,8 +12,6 @@ export default async (req: NextApiRequest, res: NextApiResponse<any[]>) => {
     `public, max-age=${60}, stale-while-revalidate`
   );
 
-  console.log(Date.now(), res.headersSent, res.getHeaders());
-
-  // const tokens = await build();
-  res.status(200).json([ Math.random() ]);
+  const tokens = await build();
+  res.status(200).json(tokens);
 }
