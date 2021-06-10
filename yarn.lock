@@ -2727,10 +2727,10 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-rainbow-token-list-test@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/rainbow-token-list-test/-/rainbow-token-list-test-1.5.0.tgz#3d44a4dfbdcc3662ee05449608b9a208d4c30e6a"
-  integrity sha512-VO5fmenDyrxy5Wf2qJig4/jckI9o/aL8M9acioS2enX39FsNHCo0AojW0M6dy1Uxm8y3vaV5NPbsajRtSbzhAA==
+rainbow-token-list-test@latest:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/rainbow-token-list-test/-/rainbow-token-list-test-1.7.0.tgz#e147505ae8c26403c1db85d7700e17b61c60928c"
+  integrity sha512-yd+P0fGDt75E4tBdqgL2AvvNGrokl1xtTxPLcIClq6gaE0JSdJ+3VPnpFBHxcWOIR62NabCXc9sENlpuuvZeAA==
   dependencies:
     "@ethersproject/address" "^5.0.5"
     "@types/request" "^2.48.5"
