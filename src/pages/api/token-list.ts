@@ -1,7 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { Token } from 'rainbow-token-list/dist/constants';
-import { build } from 'rainbow-token-list-test'
+
+const updateUrl = `https://raw.githubusercontent.com/ctjlewis/rainbow-token-list/service-compatibility/output/rainbow-token-list.json`;
 
 export default async (req: NextApiRequest, res: NextApiResponse<Token[]>) => {
   /**
@@ -12,6 +13,6 @@ export default async (req: NextApiRequest, res: NextApiResponse<Token[]>) => {
     `public, max-age=${60}, stale-while-revalidate`
   );
 
-  const tokens = await build();
-  res.status(200).json(tokens);
+  const tokens = await fetch(updateUrl)
+  res.status(200).json(await tokens.json());
 }
